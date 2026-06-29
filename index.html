@@ -40,6 +40,26 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    /* Hiệu ứng rê chuột phát sáng chuẩn Cyberpunk */
+    .btn:hover {
+      background: #00cc7a;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    /* Ô hiển thị địa chỉ Contract Address */
+    .ca-box {
+      margin: 25px auto 0 auto;
+      padding: 10px;
+      max-width: 450px;
+      background: rgba(0, 255, 153, 0.05);
+      border: 1px dashed rgba(0, 255, 153, 0.3);
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 14px;
+      color: #00ff99;
     }
 
     section {
@@ -60,6 +80,12 @@
       opacity: 0.6;
       font-size: 12px;
     }
+
+    footer a {
+      color: #00ff99;
+      text-decoration: none;
+      margin: 0 5px;
+    }
   </style>
 </head>
 
@@ -69,9 +95,15 @@
   <h1>🚀 ETR COIN</h1>
   <p class="tagline">No roadmap. No promises. Just AI, memes, and community.</p>
 
-  <a class="btn" href="#">Buy on Pump.fun</a>
-  <a class="btn" href="#">Join Telegram</a>
-  <a class="btn" href="#">Follow X</a>
+  <div style="margin-top: 20px;">
+    <a class="btn" href="#" target="_blank">Buy on Pump.fun</a>
+    <a class="btn" href="https://t.me/enteralcoin" target="_blank">Join Telegram</a>
+    <a class="btn" href="https://x.com/enteralcoin" target="_blank">Follow X</a>
+  </div>
+
+  <div class="ca-box">
+    Contract: <span>Coming Soon (Will update after launch)</span>
+  </div>
 </header>
 
 <section>
@@ -99,7 +131,9 @@
 </section>
 
 <footer>
-  © 2026 ETR Coin • Built by community
+  © 2026 ETR Coin • Built by community • 
+  <a href="https://x.com/enteralcoin" target="_blank">X</a> | 
+  <a href="https://t.me/enteralcoin" target="_blank">Telegram</a>
 </footer>
 
 </body>
